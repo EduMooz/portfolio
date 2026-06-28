@@ -6,6 +6,9 @@
     <meta name="description" content="Portfólio de Carlos Eduardo (Cadu Santos), Desenvolvedor Full Stack especializado em Python, JavaScript e desenvolvimento web.">
     <meta name="author" content="Carlos Eduardo">
     <meta name="keywords" content="portfolio, desenvolvedor, python, javascript, html, css, full stack">
+    <meta property="og:title" content="Carlos Eduardo | Desenvolvedor Full Stack">
+    <meta property="og:description" content="Portfólio de Carlos Eduardo, desenvolvedor Full Stack especializado em Python, JavaScript e desenvolvimento web.">
+    <meta property="og:image" content="assets/foto.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/icone.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -13,25 +16,39 @@
 </head>
 
 <body>
-    <nav>
-  <a class="nav-logo" href="#hero">Cadu<span>.</span>Santos</a>
-  <ul class="nav-links">
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#skills">Habilidades</a></li>
-    <li><a href="#projetos">Projetos</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-</nav>
+  <nav>
+    <a class="nav-logo" href="#hero">Cadu<span>.</span>Santos</a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
 
 <!-- HERO -->
-<section id="hero">
-  <span class="hero-tag">Desenvolvedor Full Stack</span>
-  <h1 class="hero-title">Olá, sou <span class="name">Carlos Eduardo (Cadu Santos)</span>.<br>Transformo ideias em aplicações web.</h1>
-  <p class="hero-subtitle">Desenvolvedor Full Stack em formação, apaixonado por tecnologia e resolução de problemas. Desenvolvo aplicações web utilizando Python, JavaScript, HTML, CSS e SQL, sempre buscando escrever código limpo, criar interfaces intuitivas e entregar soluções de qualidade.</p>
-  <div class="hero-btns">
-    <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-    <a href="#contato" class="btn btn-outline">Entrar em contato</a>
-  </div>
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-left">
+        <span class="hero-tag">Desenvolvedor Full Stack</span>
+        <h1 class="hero-title">
+          Olá, sou
+          <span class="name">Carlos Eduardo (Cadu Santos)</span>.
+          <br>
+          Transformo ideias em aplicações web.
+        </h1>
+        <p class="hero-subtitle">
+          Desenvolvedor Full Stack em formação, focado na criação de aplicações web modernas utilizando Python, JavaScript, HTML, CSS e SQL. Gosto de transformar problemas em soluções simples, intuitivas e eficientes.
+        </p>
+        <div class="hero-btns">
+          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+          <a href="#contato" class="btn btn-outline">Entrar em contato</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="assets/foto.jpg" alt="Foto de Carlos Eduardo" class="hero-photo">
+      </div>
+    </div>
 </section>
 
 <hr class="divider">
@@ -103,7 +120,7 @@
 
     <div class="project-card reveal">
         <div class="project-image-container">
-            <img src="assets/assistente_ia.png" alt="imagem da tela do Assistente Virtual com IA" class="project-image">
+            <img src="assets/assistente_ia.png" alt="imagem da tela do Assistente Virtual com IA" class="project-image" loading="lazy">
         </div>
       <div>
         <span class="project-tag">Inteligência Artificial</span>
@@ -117,33 +134,35 @@
         </div>
       </div>
       <div class="project-links">
-        <a href="https://github.com/EduMooz/assistente-virtual-ia" class="project-link">⌥ GitHub</a>
+        <a href="https://assistente-virtual-ia-cadu.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-link">↗ Demo</a>
+        <a href="https://github.com/EduMooz/assistente-virtual-ia" target="_blank" rel="noopener noreferrer" class="project-link">⌥ GitHub</a>
       </div>
     </div>
 
     <div class="project-card reveal">
         <div class="project-image-container">
-            <img src="assets/agenda_bella.png" alt="imagem da tela do Assistente Virtual com IA" class="project-image">
+            <img src="assets/agenda_bella.png" alt="imagem da tela inicial do Agenda Bella" class="project-image" loading="lazy">
         </div>
       <div>
         <span class="project-tag">Aplicação Web</span>
         <h3 class="project-title">Agenda Bella</h3>
-        <p class="project-desc">Sistema web para gerenciamento de agendamentos, desenvolvido para organizar clientes, horários e serviços de maneira simples, intuitiva e eficiente.</p>
+        <p class="project-desc">Protótipo desenvolvido em ASP.NET MVC para gerenciamento de agendamentos de um salão de beleza. O projeto foi criado com foco na arquitetura MVC, organização do código e modelagem de banco de dados utilizando SQL Server.</p>
         <div class="project-techs">
+          <span class="tech-tag">ASP.NET MVC</span>
           <span class="tech-tag">HTML/CSS</span>
           <span class="tech-tag">JavaScript</span>
           <span class="tech-tag">C#</span>
-          <span class="tech-tag">SQL</span>
+          <span class="tech-tag">SQL Server</span>
         </div>
       </div>
       <div class="project-links">
-        <a href="https://github.com/EduMooz/pim_2026_AgendaBella" class="project-link">⌥ GitHub</a>
+        <a href="https://github.com/EduMooz/pim_2026_AgendaBella" target="_blank" rel="noopener noreferrer" class="project-link">⌥ GitHub</a>
       </div>
     </div>
 
     <div class="project-card reveal">
         <div class="project-image-container">
-            <img src="assets/detecção_anomalia.png" alt="imagem da tela do Assistente Virtual com IA" class="project-image">
+            <img src="assets/detecção_anomalia.png" alt="imagem da tela do detector de anomalias" class="project-image" loading="lazy">
         </div>
       <div>
         <span class="project-tag">Machine Learning</span>
@@ -157,7 +176,7 @@
         </div>
       </div>
       <div class="project-links">
-        <a href="https://github.com/EduMooz/deteccao-de-anomalias-em-transicoes-em-python" class="project-link">⌥ GitHub</a>
+        <a href="https://github.com/EduMooz/deteccao-de-anomalias-em-transicoes-em-python" target="_blank" rel="noopener noreferrer" class="project-link">⌥ GitHub</a>
       </div>
     </div>
   </div>
@@ -171,21 +190,21 @@
   <h2 class="section-title reveal">Vamos conversar?</h2>
   <div class="contact-grid">
     <div class="contact-links reveal">
-      <a href="mailto:seu@email.com" class="contact-link">
+      <a href="mailto:carlos.rsantos129@gmail.com" class="contact-link">
         <span class="contact-link-icon">✉️</span>
         <div>
           <div class="contact-link-title">E-mail</div>
           <div class="contact-link-text">carlos.rsantos129@gmail.com</div>
         </div>
       </a>
-      <a href="https://github.com/EduMooz" target="_blank" class="contact-link">
+      <a href="https://github.com/EduMooz" target="_blank" rel="noopener noreferrer" class="contact-link">
         <span class="contact-link-icon">🐙</span>
         <div>
           <div class="contact-link-title">GitHub</div>
           <div class="contact-link-text">github.com/EduMooz</div>
         </div>
       </a>
-      <a href="https://linkedin.com/in/carlos-eduardo-rodrigues-santos-1a8899205/" target="_blank" class="contact-link">
+      <a href="https://linkedin.com/in/carlos-eduardo-rodrigues-santos-1a8899205/" target="_blank" rel="noopener noreferrer" class="contact-link">
         <span class="contact-link-icon">💼</span>
         <div>
           <div class="contact-link-title">LinkedIn</div>
